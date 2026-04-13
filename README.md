@@ -61,7 +61,7 @@ public class EazyschoolApplication {
 }
 ```
 
-> **Note (example_18)** : la ligne `@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })` est présente en commentaire, ce qui indique que la configuration JPA/DataSource a été désactivée intentionnellement.
+> **Note (example_18)** : la ligne `@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })` est commentée dans le code source Java (`//`), ce qui indique que l'exclusion de la configuration JPA/DataSource est intentionnellement désactivée pour cet exemple.
 
 Les exemples 1 à 17 utilisent directement `AnnotationConfigApplicationContext` (ou `ClassPathXmlApplicationContext` pour example8) ; ils n'ont pas de point d'entrée Spring Boot.
 
@@ -148,7 +148,7 @@ Deux aspects (`@Aspect + @Component`) gèrent la logique transversale :
 ### Templates Thymeleaf
 | Fichier | Exemple | Description |
 |---|---|---|
-| `src/main/resources/templates/home.html` | example_19 | Affiche `Hey, John Doe !!! Welcome to Eazy School.` via Thymeleaf (`th:text`) |
+| `src/main/resources/templates/home.html` | example_19 | Affiche `Hey, John Doe!!! Welcome to Eazy School.` via Thymeleaf (`th:text`) |
 | `src/main/resources/templates/home.html` | example_20 | Page d'accueil complète «Eazy School» avec Bootstrap, navigation, bannière, sections cours/témoignages/footer (design W3Layouts) |
 
 ---
